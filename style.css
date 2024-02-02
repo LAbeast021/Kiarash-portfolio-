@@ -15,6 +15,9 @@
     justify-content: center;
 
 };
-h4,h1{
-  color:black;  
+h4{
+  color: black;  
 };
+h1{
+    color: black;
+}
