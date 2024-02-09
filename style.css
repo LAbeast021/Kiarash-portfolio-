@@ -35,10 +35,6 @@ ul {
   color: inherit;
   font-size: 24px;
 }
-.socials a:hover {
-  rotate: 360deg;
-  transition: .5s;
-}
 
 .links {
   gap: 10px;
@@ -64,12 +60,27 @@ ul {
 .discord:hover {
   color: #5865f2;
 }
+
 .github:hover {
   color: #000000;
+  rotate: 360deg;
+  transition: .5s;
+  filter: drop-shadow(0  0  3px rgb(255, 255, 255));
 }
+
 .facebook:hover {
   color: #1877f2;
 }
+
+.socials a:not(.github):hover {
+    /* Add your hover styles here */
+    rotate: 360deg;
+    transition: .5s;
+    filter: drop-shadow(0  0  3px rgb(0, 0, 0));
+  }
+
+
+
 svg {
   position: absolute;
   top: 0;
