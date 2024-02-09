@@ -78,7 +78,7 @@ section {
   width: 100%;
 }
 
-@media (width >= 720px) {
+@media (width >= 430px) {
   section {
     align-items: center;
     padding-left: 0;
@@ -88,6 +88,10 @@ section {
   .links {
     gap: 20px;
   }
+}
+
+@media (hover: hover) {
+  
   .instagram:hover {
     color: #b13089;
   }
@@ -121,4 +125,6 @@ section {
       transition: .5s;
       filter: drop-shadow(0  0  3px rgb(0, 0, 0));
     }
+
 }
+
