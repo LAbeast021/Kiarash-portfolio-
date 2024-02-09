@@ -35,6 +35,10 @@ ul {
   color: inherit;
   font-size: 24px;
 }
+.socials a:hover {
+  rotate: 360deg;
+  transition: .5s;
+}
 
 .links {
   gap: 10px;
@@ -45,6 +49,27 @@ ul {
   margin: 0;
 }
 
+.instagram:hover {
+  color: #b13089;
+}
+.linkedin:hover {
+  color: #0077b5;
+}
+.telegram:hover {
+  color: #0088cc;
+}
+.youtube:hover {
+  color: #ff0000;
+}
+.discord:hover {
+  color: #5865f2;
+}
+.github:hover {
+  color: #000000;
+}
+.facebook:hover {
+  color: #1877f2;
+}
 svg {
   position: absolute;
   top: 0;
