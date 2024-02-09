@@ -1,3 +1,4 @@
+/* colors : good green :  #445045 , good blue : #0077b5  */
 body {
   margin: 0;
   background: linear-gradient(#0b0b0b, #212121);
@@ -44,7 +45,6 @@ ul {
   font-size: 12px;
   margin: 0;
 }
-
 
 svg {
   position: absolute;
@@ -108,7 +108,7 @@ section {
     color: #5865f2;
   }
   
-  .github:hover {
+  .x-twetter:hover, .github:hover {
     color: #000000;
     rotate: 360deg;
     transition: .5s;
@@ -119,7 +119,7 @@ section {
     color: #1877f2;
   }
   
-  .socials a:not(.github):hover {
+  .socials a:not(.github, .x-twetter):hover {
       /* Add your hover styles here */
       rotate: 360deg;
       transition: .5s;
