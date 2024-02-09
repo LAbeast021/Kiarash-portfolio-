@@ -45,41 +45,6 @@ ul {
   margin: 0;
 }
 
-.instagram:hover {
-  color: #b13089;
-}
-.linkedin:hover {
-  color: #0077b5;
-}
-.telegram:hover {
-  color: #0088cc;
-}
-.youtube:hover {
-  color: #ff0000;
-}
-.discord:hover {
-  color: #5865f2;
-}
-
-.github:hover {
-  color: #000000;
-  rotate: 360deg;
-  transition: .5s;
-  filter: drop-shadow(0  0  3px rgb(255, 255, 255));
-}
-
-.facebook:hover {
-  color: #1877f2;
-}
-
-.socials a:not(.github):hover {
-    /* Add your hover styles here */
-    rotate: 360deg;
-    transition: .5s;
-    filter: drop-shadow(0  0  3px rgb(0, 0, 0));
-  }
-
-
 
 svg {
   position: absolute;
@@ -113,7 +78,7 @@ section {
   width: 100%;
 }
 
-@media (width > 420px) {
+@media (width >= 720px) {
   section {
     align-items: center;
     padding-left: 0;
@@ -123,4 +88,37 @@ section {
   .links {
     gap: 20px;
   }
+  .instagram:hover {
+    color: #b13089;
+  }
+  .linkedin:hover {
+    color: #0077b5;
+  }
+  .telegram:hover {
+    color: #0088cc;
+  }
+  .youtube:hover {
+    color: #ff0000;
+  }
+  .discord:hover {
+    color: #5865f2;
+  }
+  
+  .github:hover {
+    color: #000000;
+    rotate: 360deg;
+    transition: .5s;
+    filter: drop-shadow(0  0  3px rgb(255, 255, 255));
+  }
+  
+  .facebook:hover {
+    color: #1877f2;
+  }
+  
+  .socials a:not(.github):hover {
+      /* Add your hover styles here */
+      rotate: 360deg;
+      transition: .5s;
+      filter: drop-shadow(0  0  3px rgb(0, 0, 0));
+    }
 }
