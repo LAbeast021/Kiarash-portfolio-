@@ -91,7 +91,7 @@ section {
 }
 
 @media (hover: hover) {
-  
+
   .instagram:hover {
     color: #b13089;
   }
@@ -123,6 +123,15 @@ section {
       /* Add your hover styles here */
       rotate: 360deg;
       transition: .5s;
+      filter: drop-shadow(0  0  3px rgb(0, 0, 0));
+    }
+
+    .links a:hover {
+      /* Add your hover styles here */
+      cursor: pointer;
+      color: #0077b5;
+      rotate: 360deg;
+      transition: .3s;
       filter: drop-shadow(0  0  3px rgb(0, 0, 0));
     }
 
