@@ -61,6 +61,7 @@ nav ul li a {
   /* font-size: 24px; */
   text-decoration: none;
   display: block;
+  filter: drop-shadow(0  0  2px rgb(0, 0, 0));
 }
 
 
@@ -87,6 +88,10 @@ ul.socials , ul.links {
 
 .links {
   gap: 10px;
+}
+
+.links a , .legal {
+  filter: drop-shadow(0  0  1.5px rgb(0, 0, 0));
 }
 
 .legal {
@@ -144,11 +149,11 @@ section {
 
   /* NAVBAR HOVER HERE \/\/\\/\/\/ */
   nav ul li a:hover {
-    transition: .3s;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1), inset 0 0 3px rgba(0, 0, 0, 0.6);
+    transition: .4s;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.6);
     background: rgba(255, 255, 255, 0);
     color: #0077b5;
-    filter: drop-shadow(0  0  3px rgb(0, 0, 0));
+    filter: drop-shadow(0  0  4px rgb(0, 0, 0));
   }
 
   .instagram:hover {
