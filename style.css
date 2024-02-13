@@ -27,7 +27,7 @@ body {
 
 /* NEW CODE FOR THE NAV BAR IS HERE \/\/\/\/\/\/\/\/\/ */
 nav {
-  max-width: 960px;
+  max-width: 75%;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   margin: 0 auto;
   padding: 60px 0;
@@ -45,10 +45,12 @@ nav ul li {
 
 nav ul li a {
   padding: 18px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
+  font-family: "Euclid Circular A", "Poppins";
   text-transform:uppercase;
   color: inherit;
-  font-size: 18px;
+  font-size: 90%;
+  /* font-size: 24px; */
   text-decoration: none;
   display: block;
 }
@@ -137,6 +139,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0);
     color: #0077b5;
+    filter: drop-shadow(0  0  3px rgb(0, 0, 0));
   }
 
   .instagram:hover {
