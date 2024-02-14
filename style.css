@@ -28,7 +28,7 @@ body {
   --our-black:#0b0b0b;
   --our-blue:#0077b5;
   --our-green:#445045;
-  --our-red:#612020;
+  --our-red:#401a1a;
 }
 
 
@@ -72,13 +72,29 @@ nav ul {
   color: inherit;
 }
 
-.menu-options-div {
-  /* border: 3px dotted rgb(255, 255, 255); */
 
+.menu-options-div {
+  display: none; /* Initially hide the menu */
+  transition: all 2s ease; /* Smooth transition */
+  /* Additional styles for positioning and appearance */
+}
+
+/* When 'show' class is added, display the menu */
+.menu-options-div.show {
   width: 100%;
   display: flex;
   justify-content:center;
 }
+
+
+
+/* .menu-options-div { */
+  /* border: 3px dotted rgb(255, 255, 255); */
+
+  /* width: 100%;
+  display: flex;
+  justify-content:center;
+} */
 
 nav ul li {
   /* border: 3px dotted rgb(196, 234, 7); */
@@ -188,25 +204,27 @@ section {
   width: 100%;
   /* border-radius: 4px; */
   display: block;
-  transition: transform 300ms ease;
+  transition: transform .4s ease-in-out, background-color .4s ease-in-out; 
 }
 
 .burger[aria-expanded=true] .top-bread {
   transform: translateY(calc(12px + 1rem)) rotate(45deg);
+  background: var(--our-red);
 }
 
 .burger[aria-expanded=true] .meat {
-  transform: rotate(45deg);  
+  transform: rotate(45deg);
+  background: var(--our-red);
+  /* display: none;   */
 }
 
 .burger[aria-expanded=true] .bottom-bread {
   transform: translateY(calc(-12px + -1rem)) rotate(-45deg);
+  background: var(--our-red);
 }
-
-
-
-
-
+.burger[aria-expanded=true] .menu-options-div {
+  border: 4px solid var(--our-red);
+}
 
 
 
@@ -240,7 +258,7 @@ section {
     transition: .4s;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.6);
     background: rgba(255, 255, 255, 0);
-    color: #0077b5;
+    color: var(--our-blue);
     filter: drop-shadow(0  0  4px rgb(0, 0, 0));
   }
 
@@ -281,7 +299,7 @@ section {
     .links a:hover {
       /* Add your hover styles here */
       cursor: pointer;
-      color: #0077b5;
+      color: var(--our-blue);
       rotate: 360deg;
       transition: .3s;
       filter: drop-shadow(0  0  3px rgb(0, 0, 0));
