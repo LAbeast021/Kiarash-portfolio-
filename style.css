@@ -27,7 +27,7 @@ body {
 
 /* NEW CODE FOR THE NAV BAR IS HERE \/\/\/\/\/\/\/\/\/ */
 nav {
-  border: 10px dotted red;
+  /* border: 10px dotted red; */
 
   max-width: 95%;
   /* mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%); */
@@ -39,38 +39,41 @@ nav {
 }
 
 nav ul {
-  border: 8px dotted rgb(0, 255, 217);
+  /* border: 8px dotted rgb(0, 255, 217); */
 
-  width: 100%;
+  width: 95%;
   max-height: 65px;
   text-align: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(133, 132, 132, 0.2) 30%, rgba(133, 132, 132, 0.2) 70%, rgba(255, 255, 255, 0) 95%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(32, 31, 31, 0.6);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   
 }
 
 .menu-button-div{
+  /* border: 3px dotted blueviolet; */
+
   width: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 3px dotted blueviolet;
+  position:relative;
 }
 .menu-button-div a {
   color: inherit;
 }
 
 .menu-options-div {
-  border: 3px dotted rgb(255, 255, 255);
+  /* border: 3px dotted rgb(255, 255, 255); */
+
   width: 100%;
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
 }
 
 nav ul li {
-  border: 3px dotted rgb(196, 234, 7);
+  /* border: 3px dotted rgb(196, 234, 7); */
   
   display: inline-block;
 }
@@ -155,6 +158,58 @@ section {
   padding-left: 60px;
   width: 100%;
 }
+
+
+
+
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  border: 0;
+  padding: 0;
+  gap: 1rem;
+  background: none;
+  cursor: pointer;
+}
+
+.burger :where(.top-bread, .meat, .bottom-bread) {
+  background: white;
+  height: 12px;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  transition: transform 300ms ease;
+}
+
+.burger[aria-expanded=true] .top-bread {
+  transform: translateY(calc(12px + 1rem)) rotate(45deg);
+}
+
+.burger[aria-expanded=true] .meat {
+  transform: rotate(45deg);  
+}
+
+.burger[aria-expanded=true] .bottom-bread {
+  transform: translateY(calc(-12px + -1rem)) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (width >= 430px) {
   section {
