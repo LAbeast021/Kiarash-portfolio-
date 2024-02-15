@@ -34,7 +34,7 @@ body {
 
 /* NEW CODE FOR THE NAV BAR IS HERE \/\/\/\/\/\/\/\/\/ */
 nav {
-  border: 10px dotted red;
+  /* border: 10px dotted red; */
 
   max-width: 95%;
   /* mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%); */
@@ -44,29 +44,33 @@ nav {
   display: flex;
   justify-content: space-around;
 }
-
-nav ul {
-  border: 8px dotted rgb(0, 255, 217);
+/* ----------------------------------------------------------------llllllll-l-l-l----l-l-l-l- */
+.nav-ul {
+  /* border: 8px dotted rgb(0, 255, 217); */
 
   width: 95%;
   max-height: 65px;
   text-align: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(133, 132, 132, 0.2) 30%, rgba(133, 132, 132, 0.2) 70%, rgba(255, 255, 255, 0) 95%);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(32, 31, 31, 0.6);
+  background: none;
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(133, 132, 132, 0.2) 30%, rgba(133, 132, 132, 0.2) 70%, rgba(255, 255, 255, 0) 95%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(32, 31, 31, 0.6); */
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  transition: background-color 2s ease-in-out;
   
 }
-
-
-
+.nav-ul.appear {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(133, 132, 132, 0.2) 30%, rgba(133, 132, 132, 0.2) 70%, rgba(255, 255, 255, 0) 95%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(32, 31, 31, 0.6);
+  transition: background-color 2s ease-in-out;
+}
 
 .menu-options-div {
-  border: 3px dotted rgb(255, 255, 255);
+  /* border: 3px dotted rgb(255, 255, 255); */
   display: none; /* Initially hide the menu */
-  transition: all 2s ease; /* Smooth transition */
+  transition: all 4s ease-in-out; /* Smooth transition */
   /* Additional styles for positioning and appearance */
 }
 
@@ -76,6 +80,7 @@ nav ul {
   display: flex;
   justify-content:center;
 }
+/* ------0-0-00-0-0---0-0-0-0-0-0-0-0-00-0-0 */
 
 
 
@@ -87,13 +92,13 @@ nav ul {
   justify-content:center;
 } */
 
-nav ul li {
-  border: 3px dotted rgb(196, 234, 7);
+.list-of-options {
+  /* border: 3px dotted rgb(196, 234, 7); */
   
   display: inline-block;
 }
 
-nav ul li a {
+.nav-options {
   padding: 15px;
   /* font-family: "Open Sans"; */
   font-family: "Euclid Circular A", "Poppins";
@@ -178,7 +183,7 @@ section {
 
 
 .menu-button-div{
-  border: 3px dotted blueviolet;
+  /* border: 3px dotted blueviolet; */
 
   height: 95%;
   width: 7%;
@@ -192,7 +197,8 @@ section {
   color: inherit;
 }
 .burger {
-  border: 2px dotted salmon;
+  /* border: 2px dotted salmon; */
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -260,7 +266,7 @@ section {
 @media (hover: hover) {
 
   /* NAVBAR HOVER HERE \/\/\\/\/\/ */
-  nav ul li a:hover {
+  .nav-options:hover {
     transition: .4s;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.6);
     background: rgba(255, 255, 255, 0);
@@ -312,4 +318,3 @@ section {
     }
 
 }
-
