@@ -28,7 +28,7 @@ body {
   --our-black:#0b0b0b;
   --our-blue:#0077b5;
   --our-green:#445045;
-  --our-red:#401a1a;
+  --our-red:#530d0d;
 }
 
 
@@ -50,7 +50,7 @@ nav {
   visibility: hidden; /* Use visibility instead of display for transition */
   opacity: 0; /* Start fully transparent */
   transform: translateY(-40px); /* Start slightly above the actual position */
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s; /* Smooth transition for opacity and transform, delay visibility */
+  transition: opacity 3s ease, transform 0.5s ease, visibility 2s linear 1s; /* Smooth transition for opacity and transform, delay visibility */
   width: 93%;
   display: flex; /* Display property is still 'flex' but element is invisible */
   justify-content: center;
@@ -86,7 +86,7 @@ nav {
   bottom: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(133, 132, 132, 0.2) 30%, rgba(133, 132, 132, 0.2) 70%, rgba(255, 255, 255, 0) 95%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(32, 31, 31, 0.6);
-  transition: all 1s ease-out;
+  transition: all 1.3s ease-out;
   transform: scaleX(0); /* Start scaled down to the center */
   transform-origin: center; /* Ensures scaling happens from the center */
   z-index: -1; /* Ensures the background is behind the content */
@@ -235,7 +235,7 @@ section {
   width: 100%;
   /* border-radius: 4px; */
   display: block;
-  transition: transform .4s ease-in-out, background-color .4s ease-in-out; 
+  transition: transform .8s ease-in-out, background-color .8s ease-in-out; 
 }
 
 .burger[aria-expanded=true] .top-bread {
