@@ -265,6 +265,36 @@ section {
 
 
 
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px rgb(0, 76, 255),
+      0 0 102px rgb(0, 81, 255),
+      0 0 151px rgb(0, 85, 255);
+}
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+  
+h1 {
+    font-size: 4.2rem;
+}
+  
+h2 {
+    font-size: 1.8rem;
+}
+
+.container {
+  margin-top: 20vh;
+}
+
 
 
 
