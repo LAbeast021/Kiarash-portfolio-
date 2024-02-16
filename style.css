@@ -193,7 +193,7 @@ svg {
   /* position: absolute; */
   top: 0;
   left: 0;
-  width: 62%;
+  width: 63%;
   height: 60%;
   transform: scaleY(3) scaleX(2.25);
   transform-origin: bottom;
@@ -219,6 +219,8 @@ section {
   padding-left: 60px;
   width: 100%;
 }
+
+
 
 
 
