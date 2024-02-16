@@ -13,6 +13,7 @@ html,
 body {
   /* height: 100%; */
   height: auto;
+  width: 100%;
 }
 
 
@@ -131,19 +132,20 @@ nav {
 footer {
   position: relative;
   left: 0;
-  bottom: 2px;
+  bottom: 5px;
   display: flex;
   width: 100%;
   /* height: 370px; */
-  height: 10%;
+  height: 20%;
 } 
 
 .background {
 /* border: 3px dotted forestgreen; */
 
   position: relative;
-  height: 10%;
+  height: 30%;
   width: 100%;
+  /* width: auto; */
   /* align-items: center; */
   display: flex;
   flex-direction: column;
@@ -191,8 +193,8 @@ svg {
   /* position: absolute; */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 70%;
+  width: 62%;
+  height: 60%;
   transform: scaleY(3) scaleX(2.25);
   transform-origin: bottom;
   box-sizing: border-box;
