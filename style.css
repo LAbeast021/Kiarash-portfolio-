@@ -11,7 +11,8 @@ body {
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
+  height: auto;
 }
 
 
@@ -128,25 +129,26 @@ nav {
 
 
 footer {
-  position: sticky;
+  position: relative;
   left: 0;
   bottom: 2px;
   display: flex;
   width: 100%;
   /* height: 370px; */
-  height: 40%;
+  height: 10%;
 } 
 
 .background {
 /* border: 3px dotted forestgreen; */
 
-  position: absolute;
+  position: relative;
+  height: 10%;
   width: 100%;
   /* align-items: center; */
   display: flex;
   flex-direction: column;
   justify-content: end;
-  z-index: -1;
+  /* z-index: -1; */
   top: 0;
   left: 0;
   right: 0;
@@ -190,7 +192,7 @@ svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   transform: scaleY(3) scaleX(2.25);
   transform-origin: bottom;
   box-sizing: border-box;
