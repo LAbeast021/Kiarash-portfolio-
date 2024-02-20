@@ -111,6 +111,7 @@ nav {
 }
 .card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 85vw;
   height: 70%;
@@ -128,15 +129,25 @@ nav {
   margin-left: -60px;
   margin-right: 30px;
   border-radius: inherit;
-  transform: drop-shadow(10px 15px 50px rgba(219, 18, 18, 0.909));
+  /* transform: drop-shadow(200px 30px 150px 50px rgb(255, 0, 0)); */
 }
 
 .card h2 {
+  /* text-shadow:
+  0 0 5px #ffffffa2,
+  0 0 10px #ffffffa8,
+  0 0 21px #ffffffb1,
+  0 0 42px rgba(0, 255, 208, 0.786),
+  0 0 82px rgb(0, 191, 255),
+  0 0 92px rgba(0, 76, 255, 0.748),
+  0 0 102px rgba(0, 81, 255, 0.834),
+  0 0 151px rgba(0, 85, 255, 0.824); */
   font-size: 26px;
   font-weight: 400;
   margin-top: 0;
   margin-right: 30px;
   margin-bottom: 10px;
+  
 }
 
 .card h3 {
