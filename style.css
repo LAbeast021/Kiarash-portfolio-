@@ -114,11 +114,11 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   width: 85vw;
-  height: 70%;
+  height: 75%;
   /* max-width: 650px; */
   /* padding: 50px 30px 50px 20px; */
-  background: #9b9a9e16;
-  border-radius: 24px;
+  background: #00000021;
+  /* border-radius: 24px; */
 }
 
 .card img {
@@ -210,6 +210,46 @@ nav {
     margin: -140px 0 30px 0;
   }
 }
+
+.block {
+	position: relative;
+	/* margin: 300px auto 0; */
+	/* width: 500px; */
+	/* height: 250px; */
+	background: linear-gradient(0deg, #000, #272727);
+  /* border-radius: 50px ; */
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #6c6669, #64647e, #525e52,#dbdbd8, #4b4242, #232122, 
+		#3f3f50, #3c3e3c,#d0d0d0, #333333);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 40s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
 
 /* -------------------------- CODE FOR ABOUT SECTION IS ABOVE */
 
