@@ -111,7 +111,7 @@ nav {
 }
 .card {
   display: flex;
-  flex-wrap: wrap;
+  /* flex: auto; */
   align-items: center;
   width: 85vw;
   height: 75%;
@@ -176,13 +176,15 @@ nav {
 
 @media (width <= 600px) {
   .card {
-    margin: 0 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 60px;
-    width: 100%;
+    /* margin: 0 40px; */
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    /* padding-bottom: 60px; */
+    width: 90%;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .card h2 {
@@ -191,10 +193,12 @@ nav {
   }
   
   .card img {
+    position: relative;
     margin: -100px 0 30px 0;
     width: 100%;
     max-width: 1000px;
     height: 250px;
+    margin-bottom: 200px;
   }
   
   .card p {
@@ -204,9 +208,9 @@ nav {
 
 @media (width <= 440px) {
   .card img {
-    height: 45vw;
-    width: 45vw;
-    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
+    /* border-radius: 50%; */
     margin: -140px 0 30px 0;
   }
 }
