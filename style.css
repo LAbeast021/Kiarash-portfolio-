@@ -112,6 +112,33 @@ nav {
   height: 100vh;
   border: 3px solid forestgreen;
 }
+.neon-text {
+  font-size: 72px;
+  color: transparent; /* Initially 'off' to match the background */
+  font-family: "Courier New", Courier, monospace;
+  animation: neonOn 6s forwards; /* Adjusted duration for additional blinks */
+  position: relative; /* For pseudo-elements */
+}
+
+@keyframes neonOn {
+  0%, 10%, 20%, 30%, 90% {
+    color: transparent; /* 'Off' states */
+    text-shadow: none;
+  }
+  15%, 25%, 35%, 95%, 100% { /* 'On' states with multiple blinks and final 'on' */
+    color: #FFF; /* White neon color */
+    text-shadow:
+      0 0 5px #FFF,
+      0 0 10px #CCC, /* Gray glow */
+      0 0 15px #BBB, /* Darker gray */
+      0 0 20px #AAA, /* Even darker gray */
+      0 0 25px #999, /* More gray layers for depth */
+      0 0 30px #888,
+      0 0 35px #777,
+      0 0 40px #666, /* Outermost glow layer approaching black */
+      0 0 45px #555;
+  }
+}
 
 
 /* -------------------------- CODE FOR ABOUT SECTION IS BELOW */
