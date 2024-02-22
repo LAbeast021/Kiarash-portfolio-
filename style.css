@@ -129,10 +129,10 @@ nav {
 }
 
 .neon-text {
-  font-size: 72px;
+  font-size: 50%;
   font-family: "Courier New", Courier, monospace;
   display: inline-block;
-  padding: 60px;
+  padding: 3%;
 }
 
 .neon-text span {
