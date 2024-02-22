@@ -108,10 +108,61 @@ nav {
 .welcomePage{
   /* background-image: url("images/blackwall3.webp"); */
   /* mask-repeat: 3; */
-  width: 50%;
+  width: 100%;
   height: 100vh;
-  border: 3px solid forestgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 100px;
+  /* border: 3px solid forestgreen; */
 }
+
+.welcomeText{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-text {
+  font-size: 72px;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  padding: 60px;
+}
+
+.neon-text span {
+  color: #333; /* Dark grey, simulating the 'off' state of neon */
+  text-shadow: none;
+  animation: neonOn 6s forwards;
+  /* Delay the animation for each letter */
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
+/* Keyframes for the neon text effect */
+@keyframes neonOn {
+  0%, 100% {
+    color: #333; /* Start and end in 'off' state */
+    text-shadow: none;
+  }
+  50% {
+    color: #FFF; /* Neon color */
+    text-shadow:
+      0 0 5px #FFF,
+      0 0 10px #CCC,
+      0 0 15px #BBB,
+      0 0 20px #AAA,
+      0 0 25px #999,
+      0 0 30px #888,
+      0 0 35px #777,
+      0 0 40px #666,
+      0 0 45px #555;
+  }
+}
+
+/* Additional styles for the wire, etc., remain unchanged */
 .neon-text {
   font-size: 72px;
   color: transparent; /* Initially 'off' to match the background */
@@ -136,6 +187,46 @@ nav {
       0 0 30px #888,
       0 0 35px #777,
       0 0 40px #666, /* Outermost glow layer approaching black */
+      0 0 45px #555;
+  }
+}
+.neon-text span {
+  color: #333; /* Initial 'off' state color to simulate turned off neon */
+  text-shadow: none;
+  animation: neonCycle 12s forwards; /* Updated duration to include full cycle */
+  animation-delay: calc(var(--i) * 0.5s); /* Staggered start for each letter */
+}
+
+/* Updated keyframes to cycle back to the white and grey neon effect */
+@keyframes neonCycle {
+  0%, 10%, 20%, 30%, 90% {
+    color: transparent; /* 'Off' state, no glow */
+    text-shadow: none;
+  }
+  15%, 25%, 35% { /* Blink 'on' states with initial glow */
+    color: #FFF;
+    text-shadow:
+      0 0 5px #FFF,
+      0 0 10px #CCC, /* Light grey glow */
+      0 0 15px #BBB, /* Darker grey */
+      0 0 20px #AAA, /* Even darker grey */
+      0 0 25px #999, /* Adding more grey layers for depth */
+      0 0 30px #888,
+      0 0 35px #777,
+      0 0 40px #666, /* Outermost glow layer approaching black */
+      0 0 45px #555;
+  }
+  95%, 100% { /* Final 'on' state, staying with white and grey neon effect */
+    color: #FFF; /* White neon color */
+    text-shadow:
+      0 0 5px #FFF,
+      0 0 10px #CCC,
+      0 0 15px #BBB,
+      0 0 20px #AAA,
+      0 0 25px #999,
+      0 0 30px #888,
+      0 0 35px #777,
+      0 0 40px #666,
       0 0 45px #555;
   }
 }

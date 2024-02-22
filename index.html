@@ -88,13 +88,27 @@
   </nav>
 <!-- --------------------------- ABOVE  IS THE NAVBAR ------------------------------------------------ -->
 <div class="welcomePage">
-  <div class="container">
-    <h1 class="neon-text">
-          Hello
-    </h1>
-    <h2 class="neon-text">Welcome </h2> 
-  
+  <div class="welcomeText">
+  <div class="neon-text">
+    <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span>
   </div>
+
+  <div class="neon-text" style="margin-top: 20px;">
+    <span>&</span>
+  </div>
+
+  
+  <div class="neon-text" style="margin-top: 20px;">
+    <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+  </div>
+
+  <script>
+    document.querySelectorAll('.neon-text span').forEach((span, index) => {
+      // This sets a custom property '--i' for each letter span to control the animation delay
+      span.style.setProperty('--i', index);
+    });
+  </script>
+</div>
 </div>
 <!-- --------------------------- BELOW  IS THE BODY ------------------------------------------------ -->
 
