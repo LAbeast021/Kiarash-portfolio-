@@ -119,12 +119,12 @@ nav {
 }
 
 .welcomeText{
-  width: 100%;
+  width: 50vw;
   height: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   /* border: 3px solid yellow; */
 }
 
@@ -132,7 +132,7 @@ nav {
   font-size: 50%;
   font-family: "Courier New", Courier, monospace;
   display: inline-block;
-  padding: 3%;
+  /* padding: 3%; */
 }
 
 .neon-text span {
