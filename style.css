@@ -7,6 +7,7 @@ body {
   background: linear-gradient(#0b0b0b, #212121);
   font-family: "Euclid Circular A", "Poppins";
   color: #d6dfed;
+  align-items: center;
 }
 
 html,
@@ -15,6 +16,9 @@ body {
   height: auto;
   width: 100%;
   align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
 }
 
 a {
@@ -100,8 +104,20 @@ nav {
 
 
 /* ------0-0-00-0-0---0-0-0-0-0-0-0-0-00-0-0 */
+
+.welcomePage{
+  /* background-image: url("images/blackwall3.webp"); */
+  /* mask-repeat: 3; */
+  width: 50%;
+  height: 100vh;
+  border: 3px solid forestgreen;
+}
+
+
 /* -------------------------- CODE FOR ABOUT SECTION IS BELOW */
 .about_container {
+  margin: 0;
+  padding: 0;
   width: 99%;
   height: 80vh;
   display: flex;
