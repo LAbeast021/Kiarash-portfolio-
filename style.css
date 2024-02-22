@@ -195,7 +195,7 @@ nav {
 .neon-text span {
   color: #333; /* Initial 'off' state color to simulate turned off neon */
   text-shadow: none;
-  animation: neonCycle 12s forwards; /* Updated duration to include full cycle */
+  animation: neonCycle 10s forwards; /* Updated duration to include full cycle */
   animation-delay: calc(var(--i) * 0.5s); /* Staggered start for each letter */
 }
 
