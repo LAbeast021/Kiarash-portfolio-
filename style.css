@@ -47,7 +47,7 @@ nav {
   padding: 3% 0;
   display: flex;
   justify-content: space-around;
-  border: 3px solid rgb(113, 255, 105);
+  /* border: 3px solid rgb(113, 255, 105); */
 
 }
 /* ----------------------------------------------------------------llllllll-l-l-l----l-l-l-l- */
@@ -57,15 +57,15 @@ nav {
   opacity: 0; /* Start fully transparent */
   transform: translateY(-40px); /* Start slightly above the actual position */
   transition: opacity 3s ease, transform 0.5s ease, visibility 2s linear 1s; /* Smooth transition for opacity and transform, delay visibility */
-  width: 88%;
+  width: 90%;
   display: flex; /* Display property is still 'flex' but element is invisible */
   justify-content: center;
   /* flex-wrap: wrap; */
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   /* -webkit-text-size-adjust: auto; */
   /* size: 10%; */
 
-  border: 3px solid hotpink;
+  /* border: 3px solid hotpink; */
 }
 
 .menu-options-div.show {
@@ -88,7 +88,7 @@ nav {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
   overflow: hidden; /* Ensures the pseudo-element is clipped to the nav-ul's bounds */
 
-  border: 3px solid rgb(108, 105, 255);
+  /* border: 3px solid rgb(108, 105, 255); */
 
 }
 
@@ -322,6 +322,19 @@ nav {
 }
 
 @media (width <= 600px) {
+  .menu-options-div li {
+    font-size: 7%;
+    /* padding: 12px; */
+
+  }
+  .menu-options-div li a {
+    /* border: 2px solid red; */
+    padding: 13px;
+
+
+  }
+
+
   .card {
     /* margin: 0 40px; */
     /* padding-left: 50px; */
@@ -353,12 +366,28 @@ nav {
   }
 }
 
-@media (width <= 440px) {
+@media (width <= 430px) {
+  .menu-options-div li a {
+    /* border: 2px solid red; */
+    padding: 10px;
+
+
+  }
+  
   .card img {
     height: 50vw;
     width: 50vw;
     /* border-radius: 50%; */
     margin: -140px 0 30px 0;
+  }
+}
+
+@media (width <= 375px) {
+  .menu-options-div li a {
+    /* border: 2px solid red; */
+    padding: 6px;
+
+
   }
 }
 
@@ -543,11 +572,12 @@ section {
 
 
 .menu-button-div{
-  border: 4px solid rgb(226, 43, 43);
+  /* border: 4px solid rgb(226, 43, 43); */
 
   height: 95%;
-  width: 12%;
+  width: 10%;
   min-width: 6rem;
+  max-width: 250px;
   margin: 0;
   display: flex;
   flex-direction: column;
