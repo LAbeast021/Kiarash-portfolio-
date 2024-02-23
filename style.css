@@ -47,6 +47,8 @@ nav {
   padding: 3% 0;
   display: flex;
   justify-content: space-around;
+  border: 3px solid rgb(113, 255, 105);
+
 }
 /* ----------------------------------------------------------------llllllll-l-l-l----l-l-l-l- */
 .menu-options-div {
@@ -55,11 +57,15 @@ nav {
   opacity: 0; /* Start fully transparent */
   transform: translateY(-40px); /* Start slightly above the actual position */
   transition: opacity 3s ease, transform 0.5s ease, visibility 2s linear 1s; /* Smooth transition for opacity and transform, delay visibility */
-  width: 93%;
+  width: 88%;
   display: flex; /* Display property is still 'flex' but element is invisible */
   justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  /* -webkit-text-size-adjust: auto; */
+  /* size: 10%; */
 
-  /* border: 3px solid hotpink; */
+  border: 3px solid hotpink;
 }
 
 .menu-options-div.show {
@@ -75,12 +81,15 @@ nav {
   max-height: 65px;
   text-align: center;
   background: none;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   position: relative; /* Needed for absolute positioning of the pseudo-element */
   overflow: hidden; /* Ensures the pseudo-element is clipped to the nav-ul's bounds */
+
+  border: 3px solid rgb(108, 105, 255);
+
 }
 
 .nav-ul::before {
@@ -534,10 +543,11 @@ section {
 
 
 .menu-button-div{
-  /* border: 3px dotted blueviolet; */
+  border: 4px solid rgb(226, 43, 43);
 
   height: 95%;
-  width: 7%;
+  width: 12%;
+  min-width: 6rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -548,12 +558,14 @@ section {
   color: inherit;
 }
 .burger {
-  /* border: 2px dotted salmon; */
+  border: 2px dotted salmon;
 
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 6rem;
+  width: 100%;
+  max-width: 6rem;
+  min-width: 4rem;
   border: 0;
   padding: 0;
   gap: 1rem;
