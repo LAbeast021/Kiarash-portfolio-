@@ -59,7 +59,7 @@ nav {
   display: flex; /* Display property is still 'flex' but element is invisible */
   justify-content: center;
 
-  border: 3px solid hotpink;
+  /* border: 3px solid hotpink; */
 }
 
 .menu-options-div.show {
