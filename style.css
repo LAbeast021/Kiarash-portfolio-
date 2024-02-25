@@ -149,7 +149,7 @@ nav {
 .neon-text span {
   color: #333; /* Dark grey, simulating the 'off' state of neon */
   text-shadow: none;
-  animation: neonOn 6s forwards;
+  animation: neonOn 4s forwards;
   /* Delay the animation for each letter */
   animation-delay: calc(var(--i) * 0.5s);
 }
@@ -203,10 +203,10 @@ nav {
       0 0 45px #555;
   }
 }
-.neon-text span {
+.neon-text span:not(#neonand) {
   color: #333; /* Initial 'off' state color to simulate turned off neon */
   text-shadow: none;
-  animation: neonCycle 10s forwards; /* Updated duration to include full cycle */
+  animation: neonCycle 8s forwards; /* Updated duration to include full cycle */
   animation-delay: calc(var(--i) * 0.5s); /* Staggered start for each letter */
 }
 
@@ -641,6 +641,19 @@ section {
 
 .neonText {
   /* margin-bottom: 500px; */
+  color: #fff;
+  text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px rgb(0, 191, 255),
+      0 0 92px rgb(0, 76, 255),
+      0 0 102px rgb(0, 81, 255),
+      0 0 151px rgb(0, 85, 255);
+}
+
+#neonand {
   color: #fff;
   text-shadow:
       0 0 5px #fff,
