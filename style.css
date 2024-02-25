@@ -176,7 +176,7 @@ nav {
 }
 
 /* Additional styles for the wire, etc., remain unchanged */
-.neon-text {
+.neon-text:not(#neonand) {
   font-size: 72px;
   color: transparent; /* Initially 'off' to match the background */
   font-family: "Courier New", Courier, monospace;
@@ -186,7 +186,7 @@ nav {
 
 @keyframes neonOn {
   0%, 10%, 20%, 30%, 90% {
-    color: transparent; /* 'Off' states */
+    color: black; /* 'Off' states */
     text-shadow: none;
   }
   15%, 25%, 35%, 95%, 100% { /* 'On' states with multiple blinks and final 'on' */
