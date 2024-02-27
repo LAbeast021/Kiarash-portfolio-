@@ -754,7 +754,7 @@ h2 {
   }
   50% {
     border-color: rgba(255, 255, 255, 0.849);
-    box-shadow: inset 0 0 45prgba(0, 0, 0, 0.627)5);
+    box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.687);
   }
   100% {
     border-color: rgb(29, 28, 28);
