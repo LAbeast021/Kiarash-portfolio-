@@ -204,9 +204,9 @@ nav {
   }
 }
 .neon-text span:not(#neonand) {
-  color: #333; /* Initial 'off' state color to simulate turned off neon */
+  color: #656565; /* Initial 'off' state color to simulate turned off neon */
   text-shadow: 0 0 15px rgb(91, 91, 91);
-  animation: neonCycle 8s forwards; /* Updated duration to include full cycle */
+  animation: neonCycle 6s forwards; /* Updated duration to include full cycle */
   animation-delay: calc(var(--i) * 0.5s); /* Staggered start for each letter */
 }
 
@@ -227,7 +227,7 @@ nav {
       0 0 30px #888,
       0 0 35px #777,
       0 0 40px #666, /* Outermost glow layer approaching black */
-      0 0 45px #555;
+      0 0 45px var(--our-blue);
   }
   95%, 100% { /* Final 'on' state, staying with white and grey neon effect */
     color: #FFF; /* White neon color */
@@ -240,7 +240,7 @@ nav {
       0 0 30px #888,
       0 0 35px #777,
       0 0 40px #666,
-      0 0 45px #555;
+      0 0 45px var(--our-blue);
   }
 }
 
@@ -761,7 +761,7 @@ h2 {
       0 0 82px rgb(92, 92, 92),
       0 0 92px rgb(72, 72, 72),
       0 0 102px rgb(69, 69, 69),
-      0 0 151px rgb(0, 0, 0),
+      0 0 151px rgb(12, 33, 126),
       0 0 161px var(--our-blue);
 }
   }
