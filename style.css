@@ -274,6 +274,7 @@ nav {
 .cardInfo {
   /* border: 3px solid red; */
 
+
 }
 
 .card img {
@@ -711,6 +712,36 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* \/\/\/\/\/\/\/\/\\/\/\\/\/\ HERE IS THE CODE FOR DEVICES THAT DO HAVE HOVER \/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 @media (hover: hover) {
 
@@ -719,8 +750,19 @@ h2 {
     transition: .4s;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.6);
     background: rgba(255, 255, 255, 0);
-    color: var(--our-blue);
+    /* color: var(--our-blue); */
     filter: drop-shadow(0  0  4px rgb(0, 0, 0));
+    color: #fff;
+  text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 21px #eae9e9,
+      0 0 42px rgb(147, 147, 147),
+      0 0 82px rgb(92, 92, 92),
+      0 0 92px rgb(72, 72, 72),
+      0 0 102px rgb(69, 69, 69),
+      0 0 151px rgb(0, 0, 0);
+}
   }
 
   .instagram:hover {
