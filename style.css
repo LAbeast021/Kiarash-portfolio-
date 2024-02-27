@@ -717,14 +717,14 @@ h2 {
   width: 80%;
   height: 80%;
   animation-delay: 1s;
-  box-shadow: inset 0 0 11px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
 .mirror-layer:nth-child(2) {
   width: 60%;
   height: 60%;
   animation-delay: 2s;
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -732,19 +732,25 @@ h2 {
   width: 40%;
   height: 40%;
   animation-delay: 3s;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .mirror-layer:nth-child(4) {
   width: 20%;
   height: 20%;
   animation-delay: 4s;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
 }
 .mirror-layer:nth-child(5) {
   width: 10%;
   height: 10%;
   animation-delay: 5s;
-  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.mirror-layer:nth-child(6) {
+  width: 5%;
+  height: 5%;
+  animation-delay: 6s;
+  box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes pulse {
