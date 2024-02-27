@@ -686,15 +686,12 @@ h2 {
     font-size: 1.8rem;
 }
 
-.container {
-  margin-top: 13vh;
-}
 
 
 
 
 
-
+/*-------------------------------------------------- INFINIT MIRROR EFFECT IS BELOW ---------------------------------------- */
 
 .infinity-mirror {
   position: relative;
@@ -716,63 +713,63 @@ h2 {
 .mirror-layer:nth-child(1) {
   width: 80%;
   height: 80%;
-  animation-delay: 1s;
-  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
+  animation-delay: .5s;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 .mirror-layer:nth-child(2) {
   width: 60%;
   height: 60%;
-  animation-delay: 2s;
-  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5);
+  animation-delay: 1s;
+  box-shadow: inset 0 0 26px rgba(0, 0, 0, 0.5);
   
 }
 
 .mirror-layer:nth-child(3) {
   width: 40%;
   height: 40%;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .mirror-layer:nth-child(4) {
+  /* background-color: rgba(35, 33, 33, 0.521); */
   width: 20%;
   height: 20%;
-  animation-delay: 4s;
+  animation-delay: 2s;
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
 }
 .mirror-layer:nth-child(5) {
   width: 10%;
   height: 10%;
-  animation-delay: 5s;
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+  animation-delay: 2.5s;
+  box-shadow: inset 0 0 23px rgba(0, 0, 0, 0.5);
 }
 .mirror-layer:nth-child(6) {
   width: 5%;
   height: 5%;
-  animation-delay: 6s;
-  box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.5);
+  animation-delay: 3s;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes pulse {
   0% {
-    border-color: rgba(95, 92, 92, 0.566);
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.858);
+    border: var(--inset-border + 5px);
+    border-color: rgba(49, 49, 49, 0.748);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.699);
   }
   50% {
-    border-color: rgba(255, 255, 255, 0.849);
+    border: var(--inset-border + 15px);
+    border-color: rgba(44, 44, 44, 0.935);
     box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.858);
   }
   100% {
-    border-color: rgb(29, 28, 28);
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.858);
+    border: var(--inset-border + 20px);
+    border-color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.95);
   }
 }
 
-
-
-
-
-
+/*-------------------------------------------------- INFINIT MIRROR EFFECT IS BELOW ---------------------------------------- */
 
 
 

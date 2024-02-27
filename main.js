@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const infinityMirror = document.querySelector('.infinity-mirror');
 
   // Example: Add a new layer every 5 seconds up to a maximum number
-  let maxLayers = 5;
+  let maxLayers = 6;
   setInterval(() => {
     if (infinityMirror.children.length < maxLayers) {
       let newLayer = document.createElement('div');
