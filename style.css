@@ -673,7 +673,6 @@ section {
 }
 
 #neonand  {
-  z-index: 200;
   color: #fff;
   text-shadow:
       0 0 5px #fff,
@@ -883,6 +882,7 @@ h2 {
       text-shadow: none;
       box-shadow: none;
     }
+
     /* .download:hover {
       -webkit-filter: invert(100%);
       filter: invert(100%);
