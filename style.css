@@ -673,6 +673,7 @@ section {
 }
 
 #neonand  {
+  z-index: 200;
   color: #fff;
   text-shadow:
       0 0 5px #fff,
@@ -718,7 +719,7 @@ h2 {
 
 .mirror-layer {
   position: absolute;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   animation: pulse 10s infinite alternate;
 }
 
@@ -777,7 +778,7 @@ h2 {
   }
   50% {
     border: var(--inset-border + 15px);
-    border-color: rgba(44, 44, 44, 0.935);
+    border-color: rgba(65, 64, 64, 0.749);
     box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.858);
   }
   100% {
@@ -875,6 +876,13 @@ h2 {
       filter: drop-shadow(0  0  3px rgb(0, 0, 0));
     }
 
+    .welcomeText span:hover {
+      cursor:default ;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      text-shadow: none;
+      box-shadow: none;
+    }
     /* .download:hover {
       -webkit-filter: invert(100%);
       filter: invert(100%);
