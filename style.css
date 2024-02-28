@@ -19,6 +19,7 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: center; */
+  scroll-behavior: smooth;
 }
 
 a {
@@ -714,7 +715,8 @@ h2 {
   width: 80%;
   height: 80%;
   animation-delay: .5s;
-  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.5);
+  /* border: 3px dotted red; */
 }
 
 .mirror-layer:nth-child(2) {
@@ -748,7 +750,7 @@ h2 {
   width: 5%;
   height: 5%;
   animation-delay: 3s;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes pulse {
