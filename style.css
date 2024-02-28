@@ -1,6 +1,8 @@
 /* colors : good green :  #445045 , good blue : #0077b5  */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans); */
 
 body {
   margin: 0;
@@ -872,6 +874,14 @@ h2 {
       transition: .3s;
       filter: drop-shadow(0  0  3px rgb(0, 0, 0));
     }
+
+    /* .download:hover {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    } */
+
   }
+
+  
 
 
