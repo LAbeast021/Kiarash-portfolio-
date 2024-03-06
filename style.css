@@ -787,7 +787,13 @@ h2 {
   }
 }
 
-/*-------------------------------------------------- INFINIT MIRROR EFFECT IS BELOW ---------------------------------------- */
+/*-------------------------------------------------- INFINIT MIRROR EFFECT IS Above ---------------------------------------- */
+.techs {
+  width: 100%;
+  height: 100hvh;
+  height: 100vh;
+  border: 3px dotted darkcyan;
+}
 
 
 
@@ -815,9 +821,9 @@ h2 {
 
     /* NAVBAR HOVER HERE \/\/\\/\/\/ */
     .nav-options:hover {
-      transition: .4s;
+      transition: .3s;
       box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.6);
-      background: rgba(255, 255, 255, 0);
+      background: rgba(0, 0, 0, 0.603);
       /* color: var(--our-blue); */
       filter: drop-shadow(0  0  4px rgb(0, 0, 0));
       color: #ffffffd1;
