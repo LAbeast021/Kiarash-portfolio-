@@ -897,5 +897,21 @@ h2 {
   }
 
   
+/* ========================================== FOR THE NAME CHANGING THING =========================================== */
+  .scoreboard-name {
+    font-family: 'Courier New', monospace; /* Gives a digital, typewriter-style look */
+    color: #FFFFFF; /* Adjust color as needed */
+    font-size: 24px; /* Adjust size as needed */
+  }
+  #about .cardInfo h2 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #FFFFFF; /* Color for text */
+    font-size: medium;
+  }
+  #about .cardInfo h2 span {
+    font-family: 'Courier New', monospace; /* Style for animated name to look digital */
+    font-size: x-large;
+  }
+    
 
 

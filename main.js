@@ -27,3 +27,32 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2000);
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const target = "Kiarash Hesampour";
+  const length = target.length;
+  const nameElement = document.getElementById('animatedName');
+  let interval = 2000; // Time between each complete animation cycle
+
+  function randomChar() {
+    return String.fromCharCode(33 + Math.floor(Math.random() * 94)); // Generates a random character from printable characters
+  }
+
+  function animateName(position) {
+    if (position < length) {
+      let text = '';
+      for (let i = 0; i < length; i++) {
+        text += i <= position ? target[i] : randomChar();
+      }
+      nameElement.textContent = text;
+      setTimeout(() => { animateName(position + 1); }, 300); // Move to the next character after 100ms
+    } else {
+      nameElement.textContent = target; // Set final text after animation
+      setTimeout(() => { animateName(0); }, interval); // Wait for 'interval' milliseconds before restarting animation
+    }
+  }
+
+  animateName(0); // Start the animation
+});
+
+
