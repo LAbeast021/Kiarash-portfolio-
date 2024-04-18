@@ -906,12 +906,37 @@ h2 {
   #about .cardInfo h2 {
     font-size: 24px; /* Adjust font size as needed */
     color: #FFFFFF; /* Color for text */
-    font-size: medium;
+    font-size: 90%;
   }
   #about .cardInfo h2 span {
     font-family: 'Courier New', monospace; /* Style for animated name to look digital */
     font-size: x-large;
   }
+
+  .resume-download {
+    display: inline-block;
+    padding: 0.625em 1.25em; /* Using 'em' for padding, scales with font size */
+    margin-top: 0.75em;
+    background-color: #000000; /* Deep blue background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 0.5em; /* Rounded corners, using 'em' to scale with padding and font size */
+    font-weight: bold;
+    font-size: 1em; /* Base font size, can scale with global font size changes */
+    border: none;
+    outline: none;
+    position: relative;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8); /* Neon light effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.resume-download:hover {
+    background-color: #1f1f1f; /* A lighter shade of blue on hover */
+    box-shadow: 0 0 7.5px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 1); /* Intensified neon glow on hover */
+}
+
+
+  
     
 
 
