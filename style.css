@@ -853,6 +853,9 @@ h2 {
   .discord:hover {
     color: #5865f2;
   }
+  .bluesky:hover {
+    color: #1da1f2;
+  }
 
   .x-twetter:hover, .github:hover {
     color: #000000;
