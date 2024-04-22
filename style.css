@@ -943,8 +943,54 @@ h2 {
     box-shadow: 0 0 7.5px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 1); /* Intensified neon glow on hover */
 }
 
+.techs {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(5%, 0.5fr));
+  grid-auto-rows: 100px;
+  place-content: center;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 10px;
+  backdrop-filter: blur(10px); /* Blurs any content behind the grid */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
 
-  
-    
+.tech-item {
+  position: relative;
+  width: 30%; /* Adjust size as necessary */
+  height: 95%;
+  border-radius: 50%; /* Makes the items circular */
+  overflow: hidden; /* Keeps the images within the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Light white background */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* White border for glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  backdrop-filter: blur(4px); /* Blurs the background behind each item */
+  -webkit-backdrop-filter: blur(4px); /* For Safari */
+}
 
+.tech-item::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.tech-item img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-item:hover img {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
 
