@@ -31,7 +31,7 @@ a {
 
 
 :root{
-  --our-white:#d6dfed;
+  --our-white:#efefef;
   --our-black:#0b0b0b;
   --our-blue:#0077b5;
   --our-green:#445045;
@@ -855,6 +855,11 @@ h2 {
   }
   .bluesky:hover {
     color: #1da1f2;
+  }
+  .email:hover{
+    color: #60cec5;
+    filter: drop-shadow(0  0  3px rgb(255, 255, 255));
+   
   }
 
   .x-twetter:hover, .github:hover {
