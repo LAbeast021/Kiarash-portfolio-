@@ -607,7 +607,7 @@ section {
   color: inherit;
 }
 .burger {
-  border: 2px dotted salmon;
+  /* border: 2px dotted salmon; */
 
   height: 100%;
   display: flex;
@@ -788,12 +788,7 @@ h2 {
 }
 
 /*-------------------------------------------------- INFINIT MIRROR EFFECT IS Above ---------------------------------------- */
-.techs {
-  width: 100%;
-  height: 100hvh;
-  height: 100vh;
-  border: 3px dotted darkcyan;
-}
+
 
 
 
@@ -909,7 +904,7 @@ h2 {
   .scoreboard-name {
     font-family: 'Courier New', monospace; /* Gives a digital, typewriter-style look */
     color: #FFFFFF; /* Adjust color as needed */
-    font-size: 24px; /* Adjust size as needed */
+    font-size: 8%; /* Adjust size as needed */
   }
   #about .cardInfo h2 {
     font-size: 24px; /* Adjust font size as needed */
@@ -943,54 +938,39 @@ h2 {
     box-shadow: 0 0 7.5px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 1); /* Intensified neon glow on hover */
 }
 
-.techs {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(5%, 0.5fr));
-  grid-auto-rows: 100px;
-  place-content: center;
-  height: 100vh;
-  padding: 10px;
-  box-sizing: border-box;
-  gap: 10px;
-  backdrop-filter: blur(10px); /* Blurs any content behind the grid */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-}
 
-.tech-item {
-  position: relative;
-  width: 30%; /* Adjust size as necessary */
-  height: 95%;
-  border-radius: 50%; /* Makes the items circular */
-  overflow: hidden; /* Keeps the images within the circle */
+
+.techs{
+  width: 100vw;
+  height: 95vh;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2); /* Light white background */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* White border for glass effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  backdrop-filter: blur(4px); /* Blurs the background behind each item */
-  -webkit-backdrop-filter: blur(4px); /* For Safari */
+  gap: 15px;
 }
-
-.tech-item::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 40%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
+.tech-item{
+  width: 12%;
+  height: 12%;
 }
-
-.tech-item img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: transform 0.3s ease-in-out;
+.ejs {
+  width: 8.5%;
+  height: 8.5%;
 }
-
-.tech-item:hover img {
-  transform: scale(1.1); /* Slightly enlarges the image on hover */
+.tech-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.3s;
+  /* filter: drop-shadow(0  0  1px rgb(202, 202, 202)); */
+  
 }
-
+.bootstrap{
+  filter:none;
+  width: 13%;
+  height: 13%;
+}
+.tech-item img:not(.bootstrap){
+   filter: drop-shadow(0  0  1px rgb(177, 177, 177));
+}
