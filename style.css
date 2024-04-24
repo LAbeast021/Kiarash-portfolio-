@@ -947,15 +947,15 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 15px;
+  gap: 13px;
 }
 .tech-item{
   width: 12%;
   height: 12%;
 }
-.ejs {
-  width: 8.5%;
-  height: 8.5%;
+.ejs , .yolo  , .pytorch, .matplotlib {
+  width: 8.2%;
+  height: 8.2%;
 }
 .tech-item img{
   width: 100%;
