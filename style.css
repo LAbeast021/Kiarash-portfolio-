@@ -967,9 +967,14 @@ h2 {
   
 }
 .bootstrap{
-  filter:none;
-  width: 13%;
-  height: 13%;
+  filter:drop-shadow(0  0  1px rgba(202, 202, 202, 0));
+  width: 14%;
+  height: 14%;
+}
+.vscode{
+  width: 10%;
+  height: 10%;
+
 }
 .tech-item img:not(.bootstrap){
    filter: drop-shadow(0  0  1px rgb(177, 177, 177));
