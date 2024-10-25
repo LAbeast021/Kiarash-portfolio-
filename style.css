@@ -978,7 +978,7 @@ h2 {
 
 }
 .tech-item img:not(.bootstrap){
-   filter: drop-shadow(0  0  1px rgb(177, 177, 177));
+   filter: drop-shadow(0  0  1px rgb(149, 149, 149));
 }
 
 #projects{
