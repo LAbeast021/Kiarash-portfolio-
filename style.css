@@ -978,11 +978,19 @@ h2 {
 
 }
 .tech-item img:not(.bootstrap){
-   filter: drop-shadow(0  0  1px rgb(149, 149, 149));
+   filter: drop-shadow(0  0  1px rgba(255, 255, 255, 0.671));
 }
 
 #projects{
-  width: 100vw;
-  height: 100vh;
-  border: 2px dotted lightblue;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.project_boxes {
+  width: 90vw;
+  height: 90vh;
+  border: 3px dotted lightcoral;
+ 
 }
